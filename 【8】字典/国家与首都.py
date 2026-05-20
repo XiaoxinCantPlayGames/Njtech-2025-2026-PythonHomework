@@ -10,6 +10,9 @@
 #输出：
 #未查询到该国家名
 #【提示】输入的国家名需要规格化处理
+
+
+
 d={"China":"Beijing","America":"Washington","Norway":"Oslo","Japan":"Tokyo","Germany":"Berlin","Canada":"Ottawa","France":"Paris","Thailand":"Bangkok"}
 x=input()
 y=x.capitalize()
