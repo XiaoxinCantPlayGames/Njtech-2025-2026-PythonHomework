@@ -30,7 +30,6 @@ def isPure(y):
 cnt=0
 for k in range(1,2023+1):
     if isPrime(k) and isPure(k):
-      
         cnt+=1
 print(cnt)
 
