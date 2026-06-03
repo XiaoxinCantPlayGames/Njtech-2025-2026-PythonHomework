@@ -17,11 +17,16 @@
 
 
 
-k = int(input())
-for i in range(10000,30001):
-    j = str(i) # 将i转换成字符串，方便切片操作
-    sub1 = int(j[0:3]) # sub1为k的前三位
-    sub2 = int(j[1:4]) # sub2为k的第2、3、4位
-    sub3 = int(j[2:5]) # sub3为k的第3、4、5位
-    if sub1 % k == 0 and sub2 % k == 0 and sub3 % k == 0: # 判断sub1、sub2、sub3是否都能被 输入的数 整除
+k=eval(input())
+cnt=0
+for i in range(10000,30000+1):
+    i=str(i)
+    a=i[:3]
+    b=i[1:4]
+    c=i[2:]
+    if int(a)%k==0 and int(b)%k==0 and int(c)%k==0:
         print(i)
+        cnt+=1
+if cnt==0:
+    print('无解')
+    
